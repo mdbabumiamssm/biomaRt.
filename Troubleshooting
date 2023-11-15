@@ -1,0 +1,22 @@
+Problem - 1 : When you are running BiomarT, you could possibly find an error like: 
+" 
+Error in `collect()`:
+! Failed to collect lazy table.
+Caused by error in `db_collect()`:
+! Arguments in `...` must be used.
+Problematic argument:
+ ..1 = Inf
+ Did you misspell an argument name?
+Run `rlang::last_trace()` to see where the error occurred.
+" 
+
+... This is an error caused by incompatibility between dbplyr and BiocFileCache. Nothing much to do with biomaRt!
+
+I tried all the way to resolve it, but eventually didn't work !
+
+Then how do i solved it ?!
+
+Well , in the meantime, bioconductor have updated "BiocFileCache" and released a new Bioconductor version. 
+
+I had to re-install everything from R, R Studio to Bioconductor!
+It resolved!!!
